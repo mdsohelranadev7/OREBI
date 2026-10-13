@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
-import Image from '../components/image'
+import Image from '../components/Image'
 import logo from '../assets/Logo.png'
 import { Link } from 'react-router-dom'
 import Bars from '../components/Bars'
