@@ -8,6 +8,8 @@ import Bars from '../components/Bars'
 import { Search, User } from 'lucide-react'
 import Dorpdown from '../components/Dorpdown'
 import Cart from '../components/Cart'
+import Banners from '../components/Banners'
+import Home from '../pages/Home'
 // import { FaUser } from "react-icons/fa";    
 
 const Heder = () => {
@@ -39,7 +41,7 @@ const Heder = () => {
                         </div>
 
                         <div className="relative">
-                            <input className={"border w-150.25 px-5 py-4 outline-none focus:border-red-500 focus:shadow-[0_0_10px_3px_rgba(239,68,68,0.2)] "} type="search" placeholder='Search Products' />
+                            <input className={"border w-150.25 px-5 py-4 outline-none focus:border-red-500 focus:shadow-[0_0_10px_3px_rgba(239,68,68,0.2)] "} type="text" placeholder='Search Products' />
                             <Search className={"absolute top-1/2 right-5 -translate-y-1/2"} />
 
                         </div>
@@ -54,8 +56,9 @@ const Heder = () => {
                     </Flex>
                 </Container>
 
-
             </div>
+            
+            
         </>
 
     )
