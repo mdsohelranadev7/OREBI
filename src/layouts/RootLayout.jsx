@@ -6,9 +6,11 @@ import Footer from './Footer'
 const RootLayout = () => {
     return (
         <>
-            <Heder />
-            <Outlet />
-            <Footer />
+            <div className="font-sans">
+                <Heder />
+                <Outlet />
+                <Footer />
+            </div>
         </>
     )
 }

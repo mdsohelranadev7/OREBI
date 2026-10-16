@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import Bars from '../components/Bars'
 import { Search, User } from 'lucide-react'
 import Dorpdown from '../components/Dorpdown'
-import Cart from '../components/Cart'
+import Carticon from '../components/Carticon'
 import Banners from '../components/Banners'
 import Home from '../pages/Home'
 // import { FaUser } from "react-icons/fa";    
@@ -19,7 +19,7 @@ const Heder = () => {
                 <Container className={"my-8"} >
                     <Flex className={"items-center"}>
                         <div className="w-[40%]">
-                            <Link><Image srcimg={logo} srcalt={logo} /></Link>
+                            <Link to={"/"}><Image srcimg={logo} srcalt={logo} /></Link>
                         </div>
                         <div className="w-[60%]">
                             <ul className={"flex gap-x-10 text-[#767676]"}>
@@ -50,15 +50,13 @@ const Heder = () => {
                                 <User />
                                 <Dorpdown />
                             </div>
-                            <Cart />
-
+                            <Carticon />
                         </div>
                     </Flex>
                 </Container>
-
             </div>
-            
-            
+
+
         </>
 
     )

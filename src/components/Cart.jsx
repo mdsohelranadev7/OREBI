@@ -1,24 +1,34 @@
 import React from 'react'
+import Image from './Image'
+import item from '../assets/items.png'
+import Container from './Container'
 
-const Cart = () => {
+const Cart = ({ className, itemimg }) => {
     return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-shopping-cart preview-icon"
-        >
-            <path d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18" />
-            <path d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25" />
-            <circle cx="18" cy="20" r="2" />
-            <circle cx="8" cy="20" r="2" />
-        </svg>
+
+        <div className="m-5">
+            <Container>
+                <h2 className="font-bold text-[39px] mb-12">New Arrivals</h2>
+
+                <div className="">
+                    <div className="w-92.5 h-92.5 relative group">
+                        <Image srcimg={itemimg} srcalt={className} />
+                        <span className='px-7.5 py-2.25 absolute top-5 left-5 bg-primary text-white opacity-0 group-hover:opacity-100 
+                        duration-400  transition-opacity '>New</span>
+
+                        <div className=" mt-6 flex justify-between items-center">
+                            <h3 className='text-[20px] font-bold  text-primary'>{className}</h3>
+                            <span className='text-gry text-[16px]'>$44.00</span>
+                        </div>
+                        <span className='mt-3.8 text-gry'>Black</span>
+
+                    </div>
+                </div>
+
+            </Container>
+        </div>
+
+
     )
 }
 
