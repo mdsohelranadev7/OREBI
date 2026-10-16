@@ -5,11 +5,9 @@ import Container from '../components/Container'
 import { Van, RotateCcw } from 'lucide-react';
 import Shipping from '../components/Shipping';
 import Promotion from '../components/Promotion';
-import Cart from '../components/Cart';
-import items from '../assets/items'
-import itemstwo from '../assets/items.1png'
-import itemsthree from '../assets/items.2png'
-import itemsfour from '../assets/items.3png'
+
+import Newarrival from '../components/Newarrival';
+
 
 
 const Home = () => {
@@ -18,13 +16,8 @@ const Home = () => {
       <Banners />
       <Shipping />
       <Promotion />
-      <div className="grid grid-cols-4">
-        <Cart className={"Watch"} itemimg={items} />
-        <Cart className={"Basic Crew Neck Tee"} itemimg={itemstwo} />
-        <Cart className={"Bag"} itemimg={itemsthree} />
-        <Cart className={"Rabbit Bag"} itemimg={itemsfour} />
+      <Newarrival />
 
-      </div>
 
 
     </>

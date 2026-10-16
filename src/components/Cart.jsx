@@ -1,6 +1,4 @@
-import React from 'react'
 import Image from './Image'
-import item from '../assets/items.png'
 import Container from './Container'
 
 const Cart = ({ className, itemimg }) => {
