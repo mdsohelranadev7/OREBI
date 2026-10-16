@@ -6,8 +6,6 @@ import itemsthree from '../assets/items3.png'
 import itemsfour from '../assets/items4.png'
 import Container from './Container';
 
-
-
 const Newarrival = () => {
     return (
         <Container>
