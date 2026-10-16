@@ -6,7 +6,7 @@ const Cart = ({ className, itemimg }) => {
 
         <div className="m-5">
             <Container>
-                <h2 className="font-bold text-[39px] mb-12">New Arrivals</h2>
+
 
                 <div className="">
                     <div className="w-92.5 h-92.5 relative group">
