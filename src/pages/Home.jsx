@@ -5,8 +5,10 @@ import Container from '../components/Container'
 import { Van, RotateCcw } from 'lucide-react';
 import Shipping from '../components/Shipping';
 import Promotion from '../components/Promotion';
-
 import Newarrival from '../components/Newarrival';
+
+
+
 
 
 
@@ -17,8 +19,6 @@ const Home = () => {
       <Shipping />
       <Promotion />
       <Newarrival />
-
-
 
     </>
   )
