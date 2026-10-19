@@ -37,28 +37,54 @@ const Newarrival = () => {
                     slidesPerView={4}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
                 >
-                    <SwiperSlide>
-                        <Link to={"/shop"}> <Productcart productimg={itemsone} badgename={"New"} productname={"New Watch"} productprice={"$44.00"} /></Link>
 
-                    </SwiperSlide>
                     <SwiperSlide>
-                        <Productcart productimg={itemtwo} badgename={"TOP"} productname={"New Neck Tee"} productprice={"$58.00"} />
+                        <Link to={"/shop"}>
+                            <Productcart productimg={itemsone} badgename={"New"} productname={"New Watch"} productprice={"$44.00"} />
+                        </Link>
                     </SwiperSlide>
+
+
                     <SwiperSlide>
-                        <Productcart productimg={itemsthree} badgename={"HOT"} productname={"New Bag"} productprice={"$12.00"} />
+                        <Link to={"/shop"}>
+                            <Productcart productimg={itemtwo} badgename={"TOP"} productname={"New Neck Tee"} productprice={"$58.00"} />
+                        </Link>
                     </SwiperSlide>
+
+
                     <SwiperSlide>
-                        <Productcart productimg={itemsfour} badgename={"New"} productname={"New Rabbit"} productprice={"$44.00"} />
+                        <Link to={"/shop"}>
+                            <Productcart productimg={itemsthree} badgename={"HOT"} productname={"New Bag"} productprice={"$12.00"} />
+                        </Link>
                     </SwiperSlide>
+
                     <SwiperSlide>
-                        <Productcart productimg={itemsone} badgename={"TOP"} productname={"New Watch"} productprice={"$94.00"} />
+                        <Link to={"/shop"}>
+                            <Productcart productimg={itemsfour} badgename={"New"} productname={"New Rabbit"} productprice={"$44.00"} />
+                        </Link>
                     </SwiperSlide>
+
+
                     <SwiperSlide>
-                        <Productcart productimg={itemtwo} badgename={"TOP"} productname={"New Watch"} productprice={"$44.00"} />
+                        <Link to={"/shop"}>
+                            <Productcart productimg={itemsone} badgename={"TOP"} productname={"New Watch"} productprice={"$94.00"} />
+                        </Link>
                     </SwiperSlide>
+
+
+
                     <SwiperSlide>
-                        <Productcart productimg={itemsfour} badgename={"TOP"} productname={"New Rabbit"} productprice={"$84.00"} />
+                        <Link to={"/shop"}>
+                            <Productcart productimg={itemtwo} badgename={"TOP"} productname={"New Watch"} productprice={"$44.00"} />
+                        </Link>
                     </SwiperSlide>
+
+                    <SwiperSlide>
+                        <Link to={"/shop"}>
+                            <Productcart productimg={itemsfour} badgename={"TOP"} productname={"New Rabbit"} productprice={"$84.00"} />
+                        </Link>
+                    </SwiperSlide>
+
                 </Swiper>
             </div>
         </Container>
