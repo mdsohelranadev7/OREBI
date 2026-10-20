@@ -9,7 +9,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f5f5f5] pb-14.75">
+    <div className="bg-[#f5f5f5] pb-15">
       <Container>
         <div className="flex justify-between">
           <div className="w-[40%] flex justify-between">
@@ -73,13 +73,13 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-between mt-16">
-          <div className="w-65 flex  gap-x-6">
+          <div className="w-65 flex text-primary gap-x-6">
             <FaFacebookF />
             <FaLinkedinIn />
             <FaInstagram />
 
           </div>
-          <div className="">
+          <div className="text-[#6d6d6d]">
             2020 Orebi Minimal eCommerce Figma Template by Adveits
           </div>
 
