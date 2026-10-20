@@ -6,6 +6,9 @@ import { Van, RotateCcw } from 'lucide-react';
 import Shipping from '../components/Shipping';
 import Promotion from '../components/Promotion';
 import Newarrival from '../components/Newarrival';
+import Ourbestseller from '../components/Ourbestseller';
+import Bannertwo from '../components/Bannertwo';
+import Specialoffer from '../components/Specialoffer';
 
 
 
@@ -19,6 +22,9 @@ const Home = () => {
       <Shipping />
       <Promotion />
       <Newarrival />
+      <Ourbestseller />
+      <Bannertwo />
+      <Specialoffer />
 
     </>
   )

@@ -15,6 +15,8 @@ const Newarrival = () => {
 
     return (
         <Container>
+
+            <h2 className={"text-[39px] font-bold text-primary mb-12"}>New Arrivals</h2>
             <div className="relative">
 
                 <button
