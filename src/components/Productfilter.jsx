@@ -30,7 +30,7 @@ const Productfilter = () => {
                     <div className="flex items-center">
 
 
-                        <div className="">
+                        <div className="flex items-center">
                             <Image srcimg={windowbar} className={"mr-5"} />
                             <Image srcimg={bartwo} />
 
@@ -38,7 +38,7 @@ const Productfilter = () => {
 
 
 
-                        
+
                     </div>
 
 
