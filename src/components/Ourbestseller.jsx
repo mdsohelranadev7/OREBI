@@ -29,27 +29,27 @@ const Ourbestseller = () => {
                         onSwiper={(swiper) => console.log(swiper)}
                     >
                         <SwiperSlide>
-                            <Link to={"/shop"}>
+                            <Link to={"/shop"}onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                 <Productcart productimg={juri} badgename={"HOT"} productname={"New Juri"} productprice={"$25.00"} />
                             </Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Link to={"/shop"}>
+                            <Link to={"/shop"}onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                 <Productcart productimg={blackbag} badgename={"HOT"} productname={"New Juri"} productprice={"$25.00"} />
                             </Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Link to={"/shop"}>
+                            <Link to={"/shop"}onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                 <Productcart productimg={graybag} badgename={"HOT"} productname={"New Juri"} productprice={"$25.00"} />
                             </Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Link to={"/shop"}>
+                            <Link to={"/shop"}onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                 <Productcart productimg={cup} badgename={"HOT"} productname={"New Juri"} productprice={"$25.00"} />
                             </Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Link to={"/shop"}>
+                            <Link to={"/shop"}onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                 <Productcart productimg={blackbag} badgename={"HOT"} productname={"New Juri"} productprice={"$25.00"} />
                             </Link>
                         </SwiperSlide>

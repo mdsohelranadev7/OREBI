@@ -23,13 +23,13 @@ const Promotion = () => {
                     </div>
                     <div className=" h-195 flex flex-col justify-between">
                         <div className="h-92 w-full">
-                            <Link to={"/shop"}>
+                            <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                 <Image srcimg={Ad2} srcalt={"ad2.jpg"} className={"w-full"} />
                             </Link>
                         </div>
 
                         <div className="h-92 w-full">
-                            <Link to={"/shop"}>
+                            <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                 <Image srcimg={Ad3} srcalt={"ad3.jpg"} className={"w-full"} />
                             </Link>
 

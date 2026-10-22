@@ -13,6 +13,10 @@ import windowbar from '../assets/windowbar.png'
 import bartwo from '../assets/bar2.png'
 import Productcart from './Productcart'
 import cup from '../assets/cup.png'
+import itemsone from '../assets/items1.png'
+import itemstwo from '../assets/items2.png'
+import itemsthree from '../assets/items3.png'
+import itemsfour from '../assets/items4.png'
 
 const Productfilter = () => {
     return (
@@ -65,10 +69,10 @@ const Productfilter = () => {
                     <div className="grid grid-cols-3 gap-x-10 mt-15 gap-y-13">
 
                         <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"New"} />
-                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"HOT"} />
-                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"TOP"} />
-                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"TRAND"} />
-                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"New"} />
+                        <Productcart productimg={itemsone} productname={"New Cup"} productprice={"$45.00"} badgename={"HOT"} />
+                        <Productcart productimg={itemstwo} productname={"New Cup"} productprice={"$45.00"} badgename={"TOP"} />
+                        <Productcart productimg={itemsthree} productname={"New Cup"} productprice={"$45.00"} badgename={"TRAND"} />
+                        <Productcart productimg={itemsfour} productname={"New Cup"} productprice={"$45.00"} badgename={"New"} />
                         <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"HOT"} />
                         <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"New"} />
                         <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"TOP"} />

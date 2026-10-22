@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import Productcart from './Productcart'
 import Container from './Container'
 import itemsone from '../assets/items1.png'
-import itemtwo from '../assets/items2.png'
+import itemstwo from '../assets/items2.png'
 import itemsthree from '../assets/items3.png'
 import itemsfour from '../assets/items4.png'
 import 'swiper/css'
@@ -41,34 +41,34 @@ const Newarrival = () => {
                 >
 
                     <SwiperSlide>
-                        <Link to={"/shop"}>
+                        <Link to={"/shop"} onClick={() => window.top({ top: 0, behavior: 'smooth' })}>
                             <Productcart productimg={itemsone} badgename={"New"} productname={"New Watch"} productprice={"$44.00"} />
                         </Link>
                     </SwiperSlide>
 
 
                     <SwiperSlide>
-                        <Link to={"/shop"}>
-                            <Productcart productimg={itemtwo} badgename={"TOP"} productname={"New Neck Tee"} productprice={"$58.00"} />
+                        <Link to={"/shop"} onClick={() => window.top({ top: 0, behavior: 'smooth' })}>
+                            <Productcart productimg={itemstwo} badgename={"TOP"} productname={"New Neck Tee"} productprice={"$58.00"} />
                         </Link>
                     </SwiperSlide>
 
 
                     <SwiperSlide>
-                        <Link to={"/shop"}>
+                        <Link to={"/shop"} onClick={() => window.top({ top: 0, behavior: 'smooth' })}>
                             <Productcart productimg={itemsthree} badgename={"HOT"} productname={"New Bag"} productprice={"$12.00"} />
                         </Link>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Link to={"/shop"}>
+                        <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                             <Productcart productimg={itemsfour} badgename={"New"} productname={"New Rabbit"} productprice={"$44.00"} />
                         </Link>
                     </SwiperSlide>
 
 
                     <SwiperSlide>
-                        <Link to={"/shop"}>
+                        <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                             <Productcart productimg={itemsone} badgename={"TOP"} productname={"New Watch"} productprice={"$94.00"} />
                         </Link>
                     </SwiperSlide>
@@ -76,20 +76,20 @@ const Newarrival = () => {
 
 
                     <SwiperSlide>
-                        <Link to={"/shop"}>
-                            <Productcart productimg={itemtwo} badgename={"TOP"} productname={"New Watch"} productprice={"$44.00"} />
+                        <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                            <Productcart productimg={itemstwo} badgename={"TOP"} productname={"New Watch"} productprice={"$44.00"} />
                         </Link>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Link to={"/shop"}>
+                        <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                             <Productcart productimg={itemsfour} badgename={"TOP"} productname={"New Rabbit"} productprice={"$84.00"} />
                         </Link>
                     </SwiperSlide>
 
                 </Swiper>
             </div>
-        </Container>
+        </Container >
     )
 }
 
