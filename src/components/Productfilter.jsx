@@ -62,11 +62,20 @@ const Productfilter = () => {
                     </div>
 
 
-                    <div className="grid grid-cols-3 gap-x-10">
+                    <div className="grid grid-cols-3 gap-x-10 mt-15 gap-y-13">
 
-                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} />
-
-
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"New"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"HOT"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"TOP"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"TRAND"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"New"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"HOT"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"New"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"TOP"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"TRAND"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"New"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"HOT"} />
+                        <Productcart productimg={cup} productname={"New Cup"} productprice={"$45.00"} badgename={"TOP"} />
                     </div>
 
 
