@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Productcart from './Productcart'
 import Container from './Container'
 import itemsone from '../assets/items1.png'
@@ -9,9 +9,31 @@ import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+
 
 const Newarrival = () => {
+
     const swiperRef = useRef(null)
+
+    const [Pdt, setpdt] = useState([])
+
+
+    useEffect(() => {
+
+        async function getpdt() {
+
+            const data = await axios.get('https://dummyjson.com/products/category/smartphones')
+            setpdt(data.data.products)
+
+
+
+        }
+        getpdt()
+    }, [])
+
+
+
 
     return (
         <Container>
@@ -40,57 +62,22 @@ const Newarrival = () => {
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
                 >
 
-                    <SwiperSlide>
-                        <Link to={"/shop"} onClick={() => window.top({ top: 0, behavior: 'smooth' })}>
-                            <Productcart productimg={itemsone} badgename={"New"} productname={"New Watch"} productprice={"$44.00"} />
-                        </Link>
-                    </SwiperSlide>
+                    {Pdt.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >
+                                <img src={item.thumbnail} alt={item.title} />
+                                <h3>{item.title}</h3>
+                                <p>${item.price}</p>
+                                <h3>{item.category}</h3>
+                            </Link>
+                        </SwiperSlide>
+                    ))}
 
-
-                    <SwiperSlide>
-                        <Link to={"/shop"} onClick={() => window.top({ top: 0, behavior: 'smooth' })}>
-                            <Productcart productimg={itemstwo} badgename={"TOP"} productname={"New Neck Tee"} productprice={"$58.00"} />
-                        </Link>
-                    </SwiperSlide>
-
-
-                    <SwiperSlide>
-                        <Link to={"/shop"} onClick={() => window.top({ top: 0, behavior: 'smooth' })}>
-                            <Productcart productimg={itemsthree} badgename={"HOT"} productname={"New Bag"} productprice={"$12.00"} />
-                        </Link>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                            <Productcart productimg={itemsfour} badgename={"New"} productname={"New Rabbit"} productprice={"$44.00"} />
-                        </Link>
-                    </SwiperSlide>
-
-
-                    <SwiperSlide>
-                        <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                            <Productcart productimg={itemsone} badgename={"TOP"} productname={"New Watch"} productprice={"$94.00"} />
-                        </Link>
-                    </SwiperSlide>
-
-
-
-                    <SwiperSlide>
-                        <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                            <Productcart productimg={itemstwo} badgename={"TOP"} productname={"New Watch"} productprice={"$44.00"} />
-                        </Link>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <Link to={"/shop"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                            <Productcart productimg={itemsfour} badgename={"TOP"} productname={"New Rabbit"} productprice={"$84.00"} />
-                        </Link>
-                    </SwiperSlide>
 
                 </Swiper>
             </div>
         </Container >
     )
-}
 
+}
 export default Newarrival

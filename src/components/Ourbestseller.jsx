@@ -53,6 +53,7 @@ const Ourbestseller = () => {
                                 <Productcart productimg={blackbag} badgename={"HOT"} productname={"New Juri"} productprice={"$25.00"} />
                             </Link>
                         </SwiperSlide>
+
                         ...
                     </Swiper>
                 </Container>
