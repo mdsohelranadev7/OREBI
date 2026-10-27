@@ -4,6 +4,12 @@ import Container from '../components/Container'
 import Productfilter from '../components/Productfilter'
 
 const Shop = () => {
+  
+
+
+
+
+
   return (
 
     <Container>

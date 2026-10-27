@@ -7,6 +7,7 @@ import Error from './layouts/Error'
 import Contact from './pages/Contact'
 import Shop from './pages/Shop'
 import './App.css'
+import ProductDetails from './layouts/ProductDetails'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="shop" element={<Shop />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
         </Route>
       </Routes>
     </>

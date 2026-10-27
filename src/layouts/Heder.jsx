@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
@@ -13,6 +13,30 @@ import Home from '../pages/Home'
 // import { FaUser } from "react-icons/fa";    
 
 const Heder = () => {
+
+    const [bars, setBars] = useState(false)
+    const manuref = useRef(null)
+
+    function handleShow() {
+
+        setBars(!bars)
+
+    }
+
+    useEffect(() => {
+        function handleOut(s) {
+            if (manuref.current && !manuref.current.contains(s.target)) {
+                setBars(false)
+            }
+
+        }
+
+        document.addEventListener("mousedown", handleOut)
+
+        return () => document.removeEventListener("mousedown", handleOut)
+
+    }, [])
+
     return (
         <>
             <div className=" border-b border-[#979797]">
@@ -22,11 +46,11 @@ const Heder = () => {
                             <Link to={"/"}><Image srcimg={logo} srcalt={logo} /></Link>
                         </div>
                         <div className="w-[60%]">
-                            <ul className={"flex gap-x-10 text-[#767676]"}>
-                                <li><Link to={"/"} className={"hover:font-bold hover:text-[#262626]"}>Home</Link></li>
-                                <li><Link to={"/shop"} className={"hover:font-bold hover:text-[#262626]"}>Shop</Link></li>
-                                <li><Link to={"/about"} className={"hover:font-bold hover:text-[#262626]"}>About</Link></li>
-                                <li><Link to={"/contact"} className={"hover:font-bold hover:text-[#262626]"}>Contact</Link></li>
+                            <ul className={"flex gap-x-10 text-gry"}>
+                                <li><Link to={"/"} className={"hover:font-bold hover:text-primary"}>Home</Link></li>
+                                <li><Link to={"/shop"} className={"hover:font-bold hover:text-primary"}>Shop</Link></li>
+                                <li><Link to={"/about"} className={"hover:font-bold hover:text-primary]"}>About</Link></li>
+                                <li><Link to={"/contact"} className={"hover:font-bold hover:text-primary26]"}>Contact</Link></li>
                             </ul>
                         </div>
                     </Flex>
@@ -35,9 +59,42 @@ const Heder = () => {
             <div className="py-7">
                 <Container>
                     <Flex className={"justify-between"}>
-                        <div className="flex items-center gap-x-2.5">
-                            <Bars />
+                        <div ref={manuref} className="flex items-center gap-x-2.5 relative" onClick={handleShow}>
+                            <Link to={"/"}>
+                                <Bars />
+                            </Link>
                             Shop by Catagory
+                            {bars &&
+                                <div className="absolute top-6 left-0 z-10 bg-primary text-white w-50 ">
+                                    <ul className='flex flex-col tex-[14px] font-sans '>
+                                        <Link to={"/"}>
+                                            <li className='border-b w-full pl-5 border-[#2d2d2d] py-4 hover:bg-black'>Accesories</li>
+
+                                        </Link>
+                                        <Link to={"/"}>
+                                            <li className='border-b w-full pl-5 border-[#2d2d2d] py-4  hover:bg-black'>Furniture</li>
+
+                                        </Link>
+                                        <Link to={"/"}>
+                                            <li className='border-b w-full pl-5 border-[#2d2d2d] py-4 hover:bg-black'>Electronics</li>
+
+                                        </Link>
+                                        <Link to={"/"}>
+                                            <li className='border-b w-full pl-5 border-[#2d2d2d] py-4 hover:bg-black'>Clothes</li>
+
+                                        </Link>
+                                        <Link to={"/"}>
+
+                                            <li className='border-b w-full pl-5 border-[#2d2d2d] py-4 hover:bg-black'>Bags</li>
+                                        </Link>
+                                        <Link to={"/"}>
+
+                                            <li className='border-b w-full pl-5 border-[#2d2d2d] py-4 hover:bg-black'>Home appliances</li>
+                                        </Link>
+                                    </ul>
+
+                                </div>
+                            }
                         </div>
 
                         <div className="relative">
