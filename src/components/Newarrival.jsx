@@ -29,7 +29,7 @@ const Newarrival = () => {
 
 
         }
-        // getpdt()
+        getpdt()
     }, [])
 
 

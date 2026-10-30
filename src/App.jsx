@@ -8,6 +8,9 @@ import Contact from './pages/Contact'
 import Shop from './pages/Shop'
 import './App.css'
 import ProductDetails from './layouts/ProductDetails'
+import { Counter } from './features/counter/Counter'
+
+
 
 function App() {
 
@@ -19,6 +22,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="shop" element={<Shop />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="count" element={<Counter />} />
+
           <Route path="*" element={<Error />} />
           <Route path="/product/:id" element={<ProductDetails />} />
         </Route>
