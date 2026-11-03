@@ -23,7 +23,7 @@ const Newarrival = () => {
 
         async function getpdt() {
 
-            const data = await axios.get('https://dummyjson.com/products/category/smartphones')
+            const data = await axios.get('https://dummyjson.com/products')
             setpdt(data.data.products)
 
 
