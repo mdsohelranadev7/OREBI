@@ -10,6 +10,9 @@ import Dorpdown from '../components/Dorpdown'
 import Carticon from '../components/Carticon'
 import Banners from '../components/Banners'
 import Home from '../pages/Home'
+import { FaCaretDown, FaShoppingCart, FaUser } from 'react-icons/fa'
+import Usermanu from '../components/Usermanu'
+import Cartmanu from '../components/Cartmanu'
 // import { FaUser } from "react-icons/fa";    
 
 const Heder = () => {
@@ -17,10 +20,11 @@ const Heder = () => {
     const [bars, setBars] = useState(false)
     const manuref = useRef(null)
 
+
+
     function handleShow() {
 
         setBars(!bars)
-
     }
 
     useEffect(() => {
@@ -28,11 +32,8 @@ const Heder = () => {
             if (manuref.current && !manuref.current.contains(s.target)) {
                 setBars(false)
             }
-
         }
-
         document.addEventListener("mousedown", handleOut)
-
         return () => document.removeEventListener("mousedown", handleOut)
 
     }, [])
@@ -102,12 +103,10 @@ const Heder = () => {
                             <Search className={"absolute top-1/2 right-5 -translate-y-1/2"} />
 
                         </div>
+
                         <div className="flex items-center gap-x-10">
-                            <div className="flex items-center gap-x-2.5 ">
-                                <User />
-                                <Dorpdown />
-                            </div>
-                            <Carticon />
+                            <Usermanu />
+                            <Cartmanu />
                         </div>
                     </Flex>
                 </Container>
