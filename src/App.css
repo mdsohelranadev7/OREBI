@@ -5,3 +5,51 @@
     --color-primary: #262626;
     --color-gry: #767676;
 }
+
+/* Swiper Custom Controls for Banner */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    color: #262626;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.mySwiper .swiper-button-prev:hover,
+.mySwiper .swiper-button-next:hover {
+    background: #262626;
+    color: #ffffff;
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .mySwiper .swiper-button-prev,
+    .mySwiper .swiper-button-next {
+        width: 28px;
+        height: 28px;
+    }
+    .mySwiper .swiper-button-prev::after,
+    .mySwiper .swiper-button-next::after {
+        font-size: 11px;
+    }
+}
+
+.mySwiper .swiper-pagination-bullet {
+    background: #767676;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    background: #262626;
+    opacity: 1;
+    width: 24px;
+    border-radius: 4px;
+}

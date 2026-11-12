@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { FaUser, FaCaretDown } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const UserMenu = () => {
     const [open, setOpen] = useState(false)
@@ -32,7 +33,9 @@ const UserMenu = () => {
                         My Account
                     </li>
                     <li className="py-4 cursor-pointer hover:bg-primary hover:text-white">
-                        Log Out
+                        <Link to={"/loging"}>
+                            Log Out
+                        </Link>
                     </li>
                 </ul>
             )}

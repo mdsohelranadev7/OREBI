@@ -40,7 +40,7 @@ const Heder = () => {
 
     return (
         <>
-            <div className=" fixed  w-full top-0 z-50 bg-white">
+            <div className="sticky w-full top-0 z-50 bg-white">
 
                 <div className=" border-b border-[#979797] ">
                     <Container className={"my-8"} >
