@@ -29,14 +29,17 @@ const UserMenu = () => {
 
             {open && (
                 <ul className="absolute right-0 top-full mt-4 w-57 bg-white border border-gray-100 text-center z-50">
-                    <li className="py-4 cursor-pointer hover:bg-primary hover:text-white">
-                        My Account
-                    </li>
-                    <li className="py-4 cursor-pointer hover:bg-primary hover:text-white">
-                        <Link to={"/loging"}>
+                    <Link to={"/loging"}>
+                        <li className="py-4 cursor-pointer hover:bg-primary hover:text-white">
+                            My Account
+                        </li>
+                    </Link>
+
+                    <Link to={"/loging"}>
+                        <li className="py-4 cursor-pointer hover:bg-primary hover:text-white">
                             Log Out
-                        </Link>
-                    </li>
+                        </li>
+                    </Link>
                 </ul>
             )}
         </div>

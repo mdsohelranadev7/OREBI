@@ -10,6 +10,7 @@ import Cart from './pages/Cart'
 import './App.css'
 import ProductDetails from './layouts/ProductDetails'
 import { Counter } from './features/counter/Counter'
+import Loging from './components/Loging'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="count" element={<Counter />} />
           <Route path="cart" element={<Cart />} />
+          <Route path="loging" element={<Loging />} />
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="*" element={<Error />} />
         </Route>
