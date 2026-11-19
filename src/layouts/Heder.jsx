@@ -10,7 +10,6 @@ import Dorpdown from '../components/Dorpdown'
 import Carticon from '../components/Carticon'
 import Banners from '../components/Banners'
 import Home from '../pages/Home'
-import { FaCaretDown, FaShoppingCart, FaUser } from 'react-icons/fa'
 import Usermanu from '../components/Usermanu'
 import Cartmanu from '../components/Cartmanu'
 // import { FaUser } from "react-icons/fa";    
@@ -52,8 +51,9 @@ const Heder = () => {
                                 <ul className={"flex gap-x-10 text-gry"}>
                                     <li><Link to={"/"} className={"hover:font-bold hover:text-primary"}>Home</Link></li>
                                     <li><Link to={"/shop"} className={"hover:font-bold hover:text-primary"}>Shop</Link></li>
-                                    <li><Link to={"/about"} className={"hover:font-bold hover:text-primary]"}>About</Link></li>
-                                    <li><Link to={"/contact"} className={"hover:font-bold hover:text-primary26]"}>Contact</Link></li>
+                                    <li><Link to={"/about"} className={"hover:font-bold hover:text-primary"}>About</Link></li>
+                                    <li><Link to={"/contact"} className={"hover:font-bold hover:text-primary"}>Contact</Link></li>
+                                    <li><Link to={"/dashboard"} className={"hover:font-bold hover:text-primary"}>Dashboard</Link></li>
                                 </ul>
                             </div>
                         </Flex>

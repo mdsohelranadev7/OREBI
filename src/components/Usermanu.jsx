@@ -22,22 +22,27 @@ const UserMenu = () => {
             <button
                 onClick={() => setOpen(!open)}
                 className="flex items-center gap-1 cursor-pointer"
+                aria-label="User Account"
             >
                 <FaUser />
                 <FaCaretDown />
             </button>
 
             {open && (
-                <ul className="absolute right-0 top-full mt-4 w-57 bg-white border border-gray-100 text-center z-50">
-                    <Link to={"/loging"}>
-                        <li className="py-4 cursor-pointer hover:bg-primary hover:text-white">
+                <ul className="absolute right-0 top-full mt-4 w-57 bg-white border border-gray-100 text-center z-50 shadow-lg">
+                    <Link to={"/dashboard"} onClick={() => setOpen(false)}>
+                        <li className="py-3.5 cursor-pointer hover:bg-primary hover:text-white font-semibold text-sm transition-colors border-b border-gray-50">
+                            Dashboard
+                        </li>
+                    </Link>
+                    <Link to={"/dashboard"} onClick={() => setOpen(false)}>
+                        <li className="py-3.5 cursor-pointer hover:bg-primary hover:text-white font-semibold text-sm transition-colors border-b border-gray-50">
                             My Account
                         </li>
                     </Link>
-
-                    <Link to={"/loging"}>
-                        <li className="py-4 cursor-pointer hover:bg-primary hover:text-white">
-                            Log Out
+                    <Link to={"/loging"} onClick={() => setOpen(false)}>
+                        <li className="py-3.5 cursor-pointer hover:bg-primary hover:text-white font-semibold text-sm transition-colors">
+                            Log In
                         </li>
                     </Link>
                 </ul>

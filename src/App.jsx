@@ -7,6 +7,7 @@ import Error from './layouts/Error'
 import Contact from './pages/Contact'
 import Shop from './pages/Shop'
 import Cart from './pages/Cart'
+import Dashboard from './pages/Dashboard'
 import './App.css'
 import ProductDetails from './layouts/ProductDetails'
 import { Counter } from './features/counter/Counter'
@@ -23,6 +24,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="count" element={<Counter />} />
           <Route path="cart" element={<Cart />} />
+          <Route path="dashboard" element={<Dashboard />} />
           <Route path="loging" element={<Loging />} />
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="*" element={<Error />} />
